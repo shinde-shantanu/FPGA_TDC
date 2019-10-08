@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Aug 30 15:55:46 2019
+# Process ID: 5297
+# Current directory: /home/shantanu/TIFR/sync_counter-2/sync_counter.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/shantanu/TIFR/sync_counter-2/sync_counter.sim/sim_1/behav/xsim/xsim.dir/simulation_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/shantanu/TIFR/sync_counter-2/sync_counter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/shantanu/TIFR/sync_counter-2/sync_counter.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/shantanu/TIFR/sync_counter-2/sync_counter.sim/sim_1/behav/xsim/xsim.dir/simulation_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:06 . Memory (MB): peak = 302.855 ; gain = 0.000 ; free physical = 3196 ; free virtual = 13955
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug 30 15:55:52 2019...
