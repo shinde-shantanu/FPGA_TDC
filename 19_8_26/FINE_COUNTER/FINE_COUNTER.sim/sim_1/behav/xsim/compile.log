@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/shantanu/TIFR/FINE_COUNTER/FINE_COUNTER.srcs/sources_1/new/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/shantanu/TIFR/FINE_COUNTER/FINE_COUNTER.srcs/sources_1/new/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/shantanu/TIFR/FINE_COUNTER/FINE_COUNTER.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation

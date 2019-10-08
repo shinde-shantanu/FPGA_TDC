@@ -1,0 +1,260 @@
+
+*** Running vivado
+    with args -log simulation.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source simulation.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source simulation.tcl -notrace
+Command: synth_design -top simulation -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9245 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1312.746 ; gain = 85.914 ; free physical = 2750 ; free virtual = 13130
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'simulation' [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sim_1/new/simulation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sync' [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sync' (1#1) [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compare' [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/compare.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'compare' (2#1) [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/compare.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (3#1) [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/counter.v:23]
+WARNING: [Synth 8-85] always block has no event control specified [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sim_1/new/simulation.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'simulation' (4#1) [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sim_1/new/simulation.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1357.371 ; gain = 130.539 ; free physical = 2763 ; free virtual = 13143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1357.371 ; gain = 130.539 ; free physical = 2762 ; free virtual = 13143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1365.375 ; gain = 138.543 ; free physical = 2762 ; free virtual = 13142
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1373.383 ; gain = 146.551 ; free physical = 2753 ; free virtual = 13134
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module compare 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'uut2/gate_p_reg' into 'uut1/op2_reg' [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/counter.v:56]
+WARNING: [Synth 8-6014] Unused sequential element uut2/gate_p_reg was removed.  [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/counter.v:56]
+WARNING: [Synth 8-6014] Unused sequential element uut2/count_reg was removed.  [/home/shantanu/TIFR/sync_counter-2/sync_counter.srcs/sources_1/new/counter.v:58]
+WARNING: [Synth 8-3332] Sequential element (uut1/op2_reg) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/uut3/delay1_reg) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[15]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[14]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[13]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[12]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[11]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[10]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[9]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[8]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[7]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[6]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[5]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[4]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[3]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[2]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[1]) is unused and will be removed from module simulation.
+WARNING: [Synth 8-3332] Sequential element (uut2/count_live_reg[0]) is unused and will be removed from module simulation.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2601 ; free virtual = 12983
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.156 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.164 ; gain = 252.324 ; free physical = 2600 ; free virtual = 12982
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1573.227 ; gain = 358.934 ; free physical = 2571 ; free virtual = 12953
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/shantanu/TIFR/sync_counter-2/sync_counter.runs/synth_1/simulation.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file simulation_utilization_synth.rpt -pb simulation_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1597.238 ; gain = 0.000 ; free physical = 2572 ; free virtual = 12954
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 25 17:11:19 2019...
