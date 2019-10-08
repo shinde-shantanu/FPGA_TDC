@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Sep 26 17:28:00 2019
+# Process ID: 10590
+# Current directory: /home/shantanu/TIFR/carry4_delay/carry4_delay.sim/sim_1/synth/func/xsim
+# Command line: wbtcv -mode batch -source /home/shantanu/TIFR/carry4_delay/carry4_delay.sim/sim_1/synth/func/xsim/xsim.dir/top_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/shantanu/TIFR/carry4_delay/carry4_delay.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: /home/shantanu/TIFR/carry4_delay/carry4_delay.sim/sim_1/synth/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/shantanu/TIFR/carry4_delay/carry4_delay.sim/sim_1/synth/func/xsim/xsim.dir/top_func_synth/webtalk/xsim_webtalk.tcl -notrace

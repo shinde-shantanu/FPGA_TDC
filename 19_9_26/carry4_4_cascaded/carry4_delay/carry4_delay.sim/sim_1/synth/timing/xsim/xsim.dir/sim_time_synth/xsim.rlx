@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4206882176004940635  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto aa791744c0144fdb9582938ff6d9e6a3 --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot sim_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.sim xil_defaultlib.glbl" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:07:38" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/sim_time_synth/xsimk\"   \"xsim.dir/sim_time_synth/obj/xsim_0.lnx64.o\" \"xsim.dir/sim_time_synth/obj/xsim_1.lnx64.o\" \"/home/shantanu/vivado/Vivado/2018.2/lib/lnx64.o/librdi_simulator_kernel.so\"  \"/home/shantanu/vivado/Vivado/2018.2/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

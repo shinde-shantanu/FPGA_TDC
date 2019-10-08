@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"sim_time_impl.v" \
+"../../../../../carry4_delay.srcs/sim_1/new/sim.v" \
+
+# Do not sort compile order
+nosort
