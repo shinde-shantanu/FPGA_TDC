@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  8 16:54:55 2020
+# Process ID: 15412
+# Current directory: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2260 C:\Users\Shantanu Shinde\Desktop\Shantanu\TIFR\Fine Counter Codes\Hybrid_Counter_FIFO\Hybrid_Counter.xpr
+# Log file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/vivado.log
+# Journal file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 839.813 ; gain = 207.797
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  8 18:51:45 2020...

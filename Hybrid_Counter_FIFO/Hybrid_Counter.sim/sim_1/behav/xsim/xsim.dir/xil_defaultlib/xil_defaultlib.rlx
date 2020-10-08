@@ -1,0 +1,15 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sim_1/new/sim.v,1581914751,verilog,,,,sim,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v,1581427921,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/DFF.v,,Coarse_Counter,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/DFF.v,1581506575,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v,,DFF,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v,1581425659,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v,,Fine_Counter,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v,1581428204,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/delay.v,,Hybrid_Counter,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/delay.v,1581426305,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/delay_line.v,,delay,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/delay_line.v,1581426076,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/encoder.v,,delay_line,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/encoder.v,1581426195,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/top.v,,encoder,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/top.v,1581507564,verilog,,,,top,,,,,,,,
+C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sources_1/new/uart_transceiver.v,1581513102,verilog,,C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter/Hybrid_Counter.srcs/sim_1/new/sim.v,,uart_transceiver,,,,,,,,

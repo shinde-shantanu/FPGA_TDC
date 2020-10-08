@@ -1,0 +1,825 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug  8 18:02:11 2020
+# Process ID: 16472
+# Current directory: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.runs/synth_1/top.vds
+# Journal file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 425.520 ; gain = 132.148
+Command: synth_design -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13612 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 977.051 ; gain = 234.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Fine_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (1#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (2#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'delay' (3#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/encoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'encoder' (4#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/encoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (5#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fine_Counter' (6#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Coarse_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter RUN bound to: 2'b01 
+	Parameter FIN bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (7#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/DFF.v:23]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:80]
+WARNING: [Synth 8-6014] Unused sequential element reset_reg was removed.  [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'Coarse_Counter' (8#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hybrid_Counter' (9#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'op_fc1' does not match port width (10) of module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:47]
+WARNING: [Synth 8-689] width (1) of port connection 'op_fc2' does not match port width (10) of module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:48]
+WARNING: [Synth 8-689] width (1) of port connection 'op_cc' does not match port width (16) of module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:49]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/fifo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.runs/synth_1/.Xil/Vivado-16472-DESKTOP-UENKOU2/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (10#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.runs/synth_1/.Xil/Vivado-16472-DESKTOP-UENKOU2/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (11#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/fifo.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'dout' does not match port width (64) of module 'fifo' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/transmitter.v:23]
+	Parameter uart_rate bound to: 10416 - type: integer 
+	Parameter bytes bound to: 8 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg was removed.  [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/transmitter.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (12#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/transmitter.v:23]
+WARNING: [Synth 8-3848] Net TxD in module/entity top does not have driver. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:27]
+WARNING: [Synth 8-3848] Net bitout in module/entity top does not have driver. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design top has unconnected port TxD
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1106.746 ; gain = 363.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1106.746 ; gain = 363.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1106.746 ; gain = 363.914
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1106.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 400 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'uut2/uut'
+Finished Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'uut2/uut'
+Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1225.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1225.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for uut2/uut. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/encoder.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3194  
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3211  
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module encoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1597  
+	   2 Input      1 Bit        Muxes := 1597  
+Module Fine_Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Coarse_Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'uut1/uut_cc/uut4/Q_reg' into 'uut1/uut_fc1/flag1_reg' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/DFF.v:31]
+INFO: [Synth 8-4471] merging register 'uut1/uut_cc/uut5/Q_reg' into 'uut1/uut_fc2/flag1_reg' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/DFF.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut1/uut_fc1/op_reg' and it is trimmed from '10' to '1' bits. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut1/uut_fc2/op_reg' and it is trimmed from '10' to '1' bits. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v:36]
+WARNING: [Synth 8-3331] design top has unconnected port TxD
+WARNING: [Synth 8-3332] Sequential element (temp_reg[9]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[8]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[7]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[6]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[5]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[4]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[3]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[2]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[1]) is unused and will be removed from module encoder__1.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[9]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[8]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[7]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[6]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[5]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[4]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[3]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[2]) is unused and will be removed from module encoder.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[1]) is unused and will be removed from module encoder.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 1225.793 ; gain = 482.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |fifo_generator_0 |     1|
+|2     |BUFG             |     1|
+|3     |CARRY4           |   412|
+|4     |LUT1             |     5|
+|5     |LUT2             |     8|
+|6     |LUT3             |    14|
+|7     |LUT4             |   223|
+|8     |LUT5             |   121|
+|9     |LUT6             |   758|
+|10    |FDRE             |  1660|
+|11    |LDP              |     2|
+|12    |IBUF             |     3|
+|13    |OBUFT            |     1|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------------------------+---------------+------+
+|      |Instance                   |Module         |Cells |
++------+---------------------------+---------------+------+
+|1     |top                        |               |  3274|
+|2     |  uut1                     |Hybrid_Counter |  3088|
+|3     |    uut_cc                 |Coarse_Counter |    10|
+|4     |    uut_fc1                |Fine_Counter   |  1539|
+|5     |      uut3                 |delay_line_199 |  1535|
+|6     |        enc                |encoder_200    |     2|
+|7     |        \genblk1[100].uut  |delay_201      |     9|
+|8     |        \genblk1[101].uut  |delay_202      |    10|
+|9     |        \genblk1[102].uut  |delay_203      |     6|
+|10    |        \genblk1[103].uut  |delay_204      |     8|
+|11    |        \genblk1[104].uut  |delay_205      |     9|
+|12    |        \genblk1[105].uut  |delay_206      |     6|
+|13    |        \genblk1[106].uut  |delay_207      |     7|
+|14    |        \genblk1[107].uut  |delay_208      |     8|
+|15    |        \genblk1[108].uut  |delay_209      |     7|
+|16    |        \genblk1[109].uut  |delay_210      |     6|
+|17    |        \genblk1[10].uut   |delay_211      |     9|
+|18    |        \genblk1[110].uut  |delay_212      |     9|
+|19    |        \genblk1[111].uut  |delay_213      |     7|
+|20    |        \genblk1[112].uut  |delay_214      |     6|
+|21    |        \genblk1[113].uut  |delay_215      |     8|
+|22    |        \genblk1[114].uut  |delay_216      |     9|
+|23    |        \genblk1[115].uut  |delay_217      |     6|
+|24    |        \genblk1[116].uut  |delay_218      |     9|
+|25    |        \genblk1[117].uut  |delay_219      |     9|
+|26    |        \genblk1[118].uut  |delay_220      |     7|
+|27    |        \genblk1[119].uut  |delay_221      |     9|
+|28    |        \genblk1[11].uut   |delay_222      |     9|
+|29    |        \genblk1[120].uut  |delay_223      |     9|
+|30    |        \genblk1[121].uut  |delay_224      |     6|
+|31    |        \genblk1[122].uut  |delay_225      |     8|
+|32    |        \genblk1[123].uut  |delay_226      |     8|
+|33    |        \genblk1[124].uut  |delay_227      |     9|
+|34    |        \genblk1[125].uut  |delay_228      |     9|
+|35    |        \genblk1[126].uut  |delay_229      |     7|
+|36    |        \genblk1[127].uut  |delay_230      |     6|
+|37    |        \genblk1[128].uut  |delay_231      |     9|
+|38    |        \genblk1[129].uut  |delay_232      |     7|
+|39    |        \genblk1[12].uut   |delay_233      |     8|
+|40    |        \genblk1[130].uut  |delay_234      |     8|
+|41    |        \genblk1[131].uut  |delay_235      |     8|
+|42    |        \genblk1[132].uut  |delay_236      |     6|
+|43    |        \genblk1[133].uut  |delay_237      |     7|
+|44    |        \genblk1[134].uut  |delay_238      |     8|
+|45    |        \genblk1[135].uut  |delay_239      |     6|
+|46    |        \genblk1[136].uut  |delay_240      |     7|
+|47    |        \genblk1[137].uut  |delay_241      |     9|
+|48    |        \genblk1[138].uut  |delay_242      |     6|
+|49    |        \genblk1[139].uut  |delay_243      |     6|
+|50    |        \genblk1[13].uut   |delay_244      |     7|
+|51    |        \genblk1[140].uut  |delay_245      |     9|
+|52    |        \genblk1[141].uut  |delay_246      |     9|
+|53    |        \genblk1[142].uut  |delay_247      |     9|
+|54    |        \genblk1[143].uut  |delay_248      |     7|
+|55    |        \genblk1[144].uut  |delay_249      |     6|
+|56    |        \genblk1[145].uut  |delay_250      |     7|
+|57    |        \genblk1[146].uut  |delay_251      |    13|
+|58    |        \genblk1[147].uut  |delay_252      |     6|
+|59    |        \genblk1[148].uut  |delay_253      |     6|
+|60    |        \genblk1[149].uut  |delay_254      |    10|
+|61    |        \genblk1[14].uut   |delay_255      |     9|
+|62    |        \genblk1[150].uut  |delay_256      |     7|
+|63    |        \genblk1[151].uut  |delay_257      |     6|
+|64    |        \genblk1[152].uut  |delay_258      |     8|
+|65    |        \genblk1[153].uut  |delay_259      |     7|
+|66    |        \genblk1[154].uut  |delay_260      |     6|
+|67    |        \genblk1[155].uut  |delay_261      |    10|
+|68    |        \genblk1[156].uut  |delay_262      |     8|
+|69    |        \genblk1[157].uut  |delay_263      |     7|
+|70    |        \genblk1[158].uut  |delay_264      |     9|
+|71    |        \genblk1[159].uut  |delay_265      |     6|
+|72    |        \genblk1[15].uut   |delay_266      |     6|
+|73    |        \genblk1[160].uut  |delay_267      |     8|
+|74    |        \genblk1[161].uut  |delay_268      |     9|
+|75    |        \genblk1[162].uut  |delay_269      |     6|
+|76    |        \genblk1[163].uut  |delay_270      |     7|
+|77    |        \genblk1[164].uut  |delay_271      |    10|
+|78    |        \genblk1[165].uut  |delay_272      |     7|
+|79    |        \genblk1[166].uut  |delay_273      |     6|
+|80    |        \genblk1[167].uut  |delay_274      |    11|
+|81    |        \genblk1[168].uut  |delay_275      |     6|
+|82    |        \genblk1[169].uut  |delay_276      |     7|
+|83    |        \genblk1[16].uut   |delay_277      |     7|
+|84    |        \genblk1[170].uut  |delay_278      |     9|
+|85    |        \genblk1[171].uut  |delay_279      |     7|
+|86    |        \genblk1[172].uut  |delay_280      |     7|
+|87    |        \genblk1[173].uut  |delay_281      |     7|
+|88    |        \genblk1[174].uut  |delay_282      |     8|
+|89    |        \genblk1[175].uut  |delay_283      |     7|
+|90    |        \genblk1[176].uut  |delay_284      |     8|
+|91    |        \genblk1[177].uut  |delay_285      |     8|
+|92    |        \genblk1[178].uut  |delay_286      |     7|
+|93    |        \genblk1[179].uut  |delay_287      |    10|
+|94    |        \genblk1[17].uut   |delay_288      |     9|
+|95    |        \genblk1[180].uut  |delay_289      |     8|
+|96    |        \genblk1[181].uut  |delay_290      |     8|
+|97    |        \genblk1[182].uut  |delay_291      |     8|
+|98    |        \genblk1[183].uut  |delay_292      |     8|
+|99    |        \genblk1[184].uut  |delay_293      |     8|
+|100   |        \genblk1[185].uut  |delay_294      |     8|
+|101   |        \genblk1[186].uut  |delay_295      |    10|
+|102   |        \genblk1[187].uut  |delay_296      |     8|
+|103   |        \genblk1[188].uut  |delay_297      |     7|
+|104   |        \genblk1[189].uut  |delay_298      |     6|
+|105   |        \genblk1[18].uut   |delay_299      |     7|
+|106   |        \genblk1[190].uut  |delay_300      |     7|
+|107   |        \genblk1[191].uut  |delay_301      |     8|
+|108   |        \genblk1[192].uut  |delay_302      |     8|
+|109   |        \genblk1[193].uut  |delay_303      |     7|
+|110   |        \genblk1[194].uut  |delay_304      |     9|
+|111   |        \genblk1[195].uut  |delay_305      |     8|
+|112   |        \genblk1[196].uut  |delay_306      |     6|
+|113   |        \genblk1[197].uut  |delay_307      |     8|
+|114   |        \genblk1[198].uut  |delay_308      |     7|
+|115   |        \genblk1[199].uut  |delay_309      |    10|
+|116   |        \genblk1[19].uut   |delay_310      |     7|
+|117   |        \genblk1[1].uut    |delay_311      |     7|
+|118   |        \genblk1[20].uut   |delay_312      |     8|
+|119   |        \genblk1[21].uut   |delay_313      |     8|
+|120   |        \genblk1[22].uut   |delay_314      |     6|
+|121   |        \genblk1[23].uut   |delay_315      |     7|
+|122   |        \genblk1[24].uut   |delay_316      |     6|
+|123   |        \genblk1[25].uut   |delay_317      |     7|
+|124   |        \genblk1[26].uut   |delay_318      |    10|
+|125   |        \genblk1[27].uut   |delay_319      |     6|
+|126   |        \genblk1[28].uut   |delay_320      |     8|
+|127   |        \genblk1[29].uut   |delay_321      |     9|
+|128   |        \genblk1[2].uut    |delay_322      |     9|
+|129   |        \genblk1[30].uut   |delay_323      |     6|
+|130   |        \genblk1[31].uut   |delay_324      |     7|
+|131   |        \genblk1[32].uut   |delay_325      |     9|
+|132   |        \genblk1[33].uut   |delay_326      |     7|
+|133   |        \genblk1[34].uut   |delay_327      |     9|
+|134   |        \genblk1[35].uut   |delay_328      |    11|
+|135   |        \genblk1[36].uut   |delay_329      |     6|
+|136   |        \genblk1[37].uut   |delay_330      |     6|
+|137   |        \genblk1[38].uut   |delay_331      |     8|
+|138   |        \genblk1[39].uut   |delay_332      |     8|
+|139   |        \genblk1[3].uut    |delay_333      |     6|
+|140   |        \genblk1[40].uut   |delay_334      |     7|
+|141   |        \genblk1[41].uut   |delay_335      |     8|
+|142   |        \genblk1[42].uut   |delay_336      |     6|
+|143   |        \genblk1[43].uut   |delay_337      |     7|
+|144   |        \genblk1[44].uut   |delay_338      |    10|
+|145   |        \genblk1[45].uut   |delay_339      |     6|
+|146   |        \genblk1[46].uut   |delay_340      |     7|
+|147   |        \genblk1[47].uut   |delay_341      |     8|
+|148   |        \genblk1[48].uut   |delay_342      |     7|
+|149   |        \genblk1[49].uut   |delay_343      |     7|
+|150   |        \genblk1[4].uut    |delay_344      |     6|
+|151   |        \genblk1[50].uut   |delay_345      |     8|
+|152   |        \genblk1[51].uut   |delay_346      |     8|
+|153   |        \genblk1[52].uut   |delay_347      |     6|
+|154   |        \genblk1[53].uut   |delay_348      |     8|
+|155   |        \genblk1[54].uut   |delay_349      |     7|
+|156   |        \genblk1[55].uut   |delay_350      |     9|
+|157   |        \genblk1[56].uut   |delay_351      |     9|
+|158   |        \genblk1[57].uut   |delay_352      |     7|
+|159   |        \genblk1[58].uut   |delay_353      |     6|
+|160   |        \genblk1[59].uut   |delay_354      |    11|
+|161   |        \genblk1[5].uut    |delay_355      |     9|
+|162   |        \genblk1[60].uut   |delay_356      |     6|
+|163   |        \genblk1[61].uut   |delay_357      |     7|
+|164   |        \genblk1[62].uut   |delay_358      |    10|
+|165   |        \genblk1[63].uut   |delay_359      |     7|
+|166   |        \genblk1[64].uut   |delay_360      |     6|
+|167   |        \genblk1[65].uut   |delay_361      |     9|
+|168   |        \genblk1[66].uut   |delay_362      |     8|
+|169   |        \genblk1[67].uut   |delay_363      |     7|
+|170   |        \genblk1[68].uut   |delay_364      |     8|
+|171   |        \genblk1[69].uut   |delay_365      |     8|
+|172   |        \genblk1[6].uut    |delay_366      |     6|
+|173   |        \genblk1[70].uut   |delay_367      |     8|
+|174   |        \genblk1[71].uut   |delay_368      |     8|
+|175   |        \genblk1[72].uut   |delay_369      |     6|
+|176   |        \genblk1[73].uut   |delay_370      |     7|
+|177   |        \genblk1[74].uut   |delay_371      |    11|
+|178   |        \genblk1[75].uut   |delay_372      |     6|
+|179   |        \genblk1[76].uut   |delay_373      |     7|
+|180   |        \genblk1[77].uut   |delay_374      |    11|
+|181   |        \genblk1[78].uut   |delay_375      |     8|
+|182   |        \genblk1[79].uut   |delay_376      |     7|
+|183   |        \genblk1[7].uut    |delay_377      |     9|
+|184   |        \genblk1[80].uut   |delay_378      |     9|
+|185   |        \genblk1[81].uut   |delay_379      |     6|
+|186   |        \genblk1[82].uut   |delay_380      |     7|
+|187   |        \genblk1[83].uut   |delay_381      |     7|
+|188   |        \genblk1[84].uut   |delay_382      |     8|
+|189   |        \genblk1[85].uut   |delay_383      |     6|
+|190   |        \genblk1[86].uut   |delay_384      |     9|
+|191   |        \genblk1[87].uut   |delay_385      |     7|
+|192   |        \genblk1[88].uut   |delay_386      |     6|
+|193   |        \genblk1[89].uut   |delay_387      |    10|
+|194   |        \genblk1[8].uut    |delay_388      |     7|
+|195   |        \genblk1[90].uut   |delay_389      |     6|
+|196   |        \genblk1[91].uut   |delay_390      |     6|
+|197   |        \genblk1[92].uut   |delay_391      |    12|
+|198   |        \genblk1[93].uut   |delay_392      |     7|
+|199   |        \genblk1[94].uut   |delay_393      |     6|
+|200   |        \genblk1[95].uut   |delay_394      |     8|
+|201   |        \genblk1[96].uut   |delay_395      |     8|
+|202   |        \genblk1[97].uut   |delay_396      |     7|
+|203   |        \genblk1[98].uut   |delay_397      |     8|
+|204   |        \genblk1[99].uut   |delay_398      |     9|
+|205   |        \genblk1[9].uut    |delay_399      |     8|
+|206   |    uut_fc2                |Fine_Counter_0 |  1539|
+|207   |      uut3                 |delay_line     |  1535|
+|208   |        enc                |encoder        |     2|
+|209   |        \genblk1[100].uut  |delay          |     9|
+|210   |        \genblk1[101].uut  |delay_1        |    10|
+|211   |        \genblk1[102].uut  |delay_2        |     6|
+|212   |        \genblk1[103].uut  |delay_3        |     8|
+|213   |        \genblk1[104].uut  |delay_4        |     9|
+|214   |        \genblk1[105].uut  |delay_5        |     6|
+|215   |        \genblk1[106].uut  |delay_6        |     7|
+|216   |        \genblk1[107].uut  |delay_7        |     8|
+|217   |        \genblk1[108].uut  |delay_8        |     7|
+|218   |        \genblk1[109].uut  |delay_9        |     6|
+|219   |        \genblk1[10].uut   |delay_10       |     9|
+|220   |        \genblk1[110].uut  |delay_11       |     9|
+|221   |        \genblk1[111].uut  |delay_12       |     7|
+|222   |        \genblk1[112].uut  |delay_13       |     6|
+|223   |        \genblk1[113].uut  |delay_14       |     8|
+|224   |        \genblk1[114].uut  |delay_15       |     9|
+|225   |        \genblk1[115].uut  |delay_16       |     6|
+|226   |        \genblk1[116].uut  |delay_17       |     9|
+|227   |        \genblk1[117].uut  |delay_18       |     9|
+|228   |        \genblk1[118].uut  |delay_19       |     7|
+|229   |        \genblk1[119].uut  |delay_20       |     9|
+|230   |        \genblk1[11].uut   |delay_21       |     9|
+|231   |        \genblk1[120].uut  |delay_22       |     9|
+|232   |        \genblk1[121].uut  |delay_23       |     6|
+|233   |        \genblk1[122].uut  |delay_24       |     8|
+|234   |        \genblk1[123].uut  |delay_25       |     8|
+|235   |        \genblk1[124].uut  |delay_26       |     9|
+|236   |        \genblk1[125].uut  |delay_27       |     9|
+|237   |        \genblk1[126].uut  |delay_28       |     7|
+|238   |        \genblk1[127].uut  |delay_29       |     6|
+|239   |        \genblk1[128].uut  |delay_30       |     9|
+|240   |        \genblk1[129].uut  |delay_31       |     7|
+|241   |        \genblk1[12].uut   |delay_32       |     8|
+|242   |        \genblk1[130].uut  |delay_33       |     8|
+|243   |        \genblk1[131].uut  |delay_34       |     8|
+|244   |        \genblk1[132].uut  |delay_35       |     6|
+|245   |        \genblk1[133].uut  |delay_36       |     7|
+|246   |        \genblk1[134].uut  |delay_37       |     8|
+|247   |        \genblk1[135].uut  |delay_38       |     6|
+|248   |        \genblk1[136].uut  |delay_39       |     7|
+|249   |        \genblk1[137].uut  |delay_40       |     9|
+|250   |        \genblk1[138].uut  |delay_41       |     6|
+|251   |        \genblk1[139].uut  |delay_42       |     6|
+|252   |        \genblk1[13].uut   |delay_43       |     7|
+|253   |        \genblk1[140].uut  |delay_44       |     9|
+|254   |        \genblk1[141].uut  |delay_45       |     9|
+|255   |        \genblk1[142].uut  |delay_46       |     9|
+|256   |        \genblk1[143].uut  |delay_47       |     7|
+|257   |        \genblk1[144].uut  |delay_48       |     6|
+|258   |        \genblk1[145].uut  |delay_49       |     7|
+|259   |        \genblk1[146].uut  |delay_50       |    13|
+|260   |        \genblk1[147].uut  |delay_51       |     6|
+|261   |        \genblk1[148].uut  |delay_52       |     6|
+|262   |        \genblk1[149].uut  |delay_53       |    10|
+|263   |        \genblk1[14].uut   |delay_54       |     9|
+|264   |        \genblk1[150].uut  |delay_55       |     7|
+|265   |        \genblk1[151].uut  |delay_56       |     6|
+|266   |        \genblk1[152].uut  |delay_57       |     8|
+|267   |        \genblk1[153].uut  |delay_58       |     7|
+|268   |        \genblk1[154].uut  |delay_59       |     6|
+|269   |        \genblk1[155].uut  |delay_60       |    10|
+|270   |        \genblk1[156].uut  |delay_61       |     8|
+|271   |        \genblk1[157].uut  |delay_62       |     7|
+|272   |        \genblk1[158].uut  |delay_63       |     9|
+|273   |        \genblk1[159].uut  |delay_64       |     6|
+|274   |        \genblk1[15].uut   |delay_65       |     6|
+|275   |        \genblk1[160].uut  |delay_66       |     8|
+|276   |        \genblk1[161].uut  |delay_67       |     9|
+|277   |        \genblk1[162].uut  |delay_68       |     6|
+|278   |        \genblk1[163].uut  |delay_69       |     7|
+|279   |        \genblk1[164].uut  |delay_70       |    10|
+|280   |        \genblk1[165].uut  |delay_71       |     7|
+|281   |        \genblk1[166].uut  |delay_72       |     6|
+|282   |        \genblk1[167].uut  |delay_73       |    11|
+|283   |        \genblk1[168].uut  |delay_74       |     6|
+|284   |        \genblk1[169].uut  |delay_75       |     7|
+|285   |        \genblk1[16].uut   |delay_76       |     7|
+|286   |        \genblk1[170].uut  |delay_77       |     9|
+|287   |        \genblk1[171].uut  |delay_78       |     7|
+|288   |        \genblk1[172].uut  |delay_79       |     7|
+|289   |        \genblk1[173].uut  |delay_80       |     7|
+|290   |        \genblk1[174].uut  |delay_81       |     8|
+|291   |        \genblk1[175].uut  |delay_82       |     7|
+|292   |        \genblk1[176].uut  |delay_83       |     8|
+|293   |        \genblk1[177].uut  |delay_84       |     8|
+|294   |        \genblk1[178].uut  |delay_85       |     7|
+|295   |        \genblk1[179].uut  |delay_86       |    10|
+|296   |        \genblk1[17].uut   |delay_87       |     9|
+|297   |        \genblk1[180].uut  |delay_88       |     8|
+|298   |        \genblk1[181].uut  |delay_89       |     8|
+|299   |        \genblk1[182].uut  |delay_90       |     8|
+|300   |        \genblk1[183].uut  |delay_91       |     8|
+|301   |        \genblk1[184].uut  |delay_92       |     8|
+|302   |        \genblk1[185].uut  |delay_93       |     8|
+|303   |        \genblk1[186].uut  |delay_94       |    10|
+|304   |        \genblk1[187].uut  |delay_95       |     8|
+|305   |        \genblk1[188].uut  |delay_96       |     7|
+|306   |        \genblk1[189].uut  |delay_97       |     6|
+|307   |        \genblk1[18].uut   |delay_98       |     7|
+|308   |        \genblk1[190].uut  |delay_99       |     7|
+|309   |        \genblk1[191].uut  |delay_100      |     8|
+|310   |        \genblk1[192].uut  |delay_101      |     8|
+|311   |        \genblk1[193].uut  |delay_102      |     7|
+|312   |        \genblk1[194].uut  |delay_103      |     9|
+|313   |        \genblk1[195].uut  |delay_104      |     8|
+|314   |        \genblk1[196].uut  |delay_105      |     6|
+|315   |        \genblk1[197].uut  |delay_106      |     8|
+|316   |        \genblk1[198].uut  |delay_107      |     7|
+|317   |        \genblk1[199].uut  |delay_108      |    10|
+|318   |        \genblk1[19].uut   |delay_109      |     7|
+|319   |        \genblk1[1].uut    |delay_110      |     7|
+|320   |        \genblk1[20].uut   |delay_111      |     8|
+|321   |        \genblk1[21].uut   |delay_112      |     8|
+|322   |        \genblk1[22].uut   |delay_113      |     6|
+|323   |        \genblk1[23].uut   |delay_114      |     7|
+|324   |        \genblk1[24].uut   |delay_115      |     6|
+|325   |        \genblk1[25].uut   |delay_116      |     7|
+|326   |        \genblk1[26].uut   |delay_117      |    10|
+|327   |        \genblk1[27].uut   |delay_118      |     6|
+|328   |        \genblk1[28].uut   |delay_119      |     8|
+|329   |        \genblk1[29].uut   |delay_120      |     9|
+|330   |        \genblk1[2].uut    |delay_121      |     9|
+|331   |        \genblk1[30].uut   |delay_122      |     6|
+|332   |        \genblk1[31].uut   |delay_123      |     7|
+|333   |        \genblk1[32].uut   |delay_124      |     9|
+|334   |        \genblk1[33].uut   |delay_125      |     7|
+|335   |        \genblk1[34].uut   |delay_126      |     9|
+|336   |        \genblk1[35].uut   |delay_127      |    11|
+|337   |        \genblk1[36].uut   |delay_128      |     6|
+|338   |        \genblk1[37].uut   |delay_129      |     6|
+|339   |        \genblk1[38].uut   |delay_130      |     8|
+|340   |        \genblk1[39].uut   |delay_131      |     8|
+|341   |        \genblk1[3].uut    |delay_132      |     6|
+|342   |        \genblk1[40].uut   |delay_133      |     7|
+|343   |        \genblk1[41].uut   |delay_134      |     8|
+|344   |        \genblk1[42].uut   |delay_135      |     6|
+|345   |        \genblk1[43].uut   |delay_136      |     7|
+|346   |        \genblk1[44].uut   |delay_137      |    10|
+|347   |        \genblk1[45].uut   |delay_138      |     6|
+|348   |        \genblk1[46].uut   |delay_139      |     7|
+|349   |        \genblk1[47].uut   |delay_140      |     8|
+|350   |        \genblk1[48].uut   |delay_141      |     7|
+|351   |        \genblk1[49].uut   |delay_142      |     7|
+|352   |        \genblk1[4].uut    |delay_143      |     6|
+|353   |        \genblk1[50].uut   |delay_144      |     8|
+|354   |        \genblk1[51].uut   |delay_145      |     8|
+|355   |        \genblk1[52].uut   |delay_146      |     6|
+|356   |        \genblk1[53].uut   |delay_147      |     8|
+|357   |        \genblk1[54].uut   |delay_148      |     7|
+|358   |        \genblk1[55].uut   |delay_149      |     9|
+|359   |        \genblk1[56].uut   |delay_150      |     9|
+|360   |        \genblk1[57].uut   |delay_151      |     7|
+|361   |        \genblk1[58].uut   |delay_152      |     6|
+|362   |        \genblk1[59].uut   |delay_153      |    11|
+|363   |        \genblk1[5].uut    |delay_154      |     9|
+|364   |        \genblk1[60].uut   |delay_155      |     6|
+|365   |        \genblk1[61].uut   |delay_156      |     7|
+|366   |        \genblk1[62].uut   |delay_157      |    10|
+|367   |        \genblk1[63].uut   |delay_158      |     7|
+|368   |        \genblk1[64].uut   |delay_159      |     6|
+|369   |        \genblk1[65].uut   |delay_160      |     9|
+|370   |        \genblk1[66].uut   |delay_161      |     8|
+|371   |        \genblk1[67].uut   |delay_162      |     7|
+|372   |        \genblk1[68].uut   |delay_163      |     8|
+|373   |        \genblk1[69].uut   |delay_164      |     8|
+|374   |        \genblk1[6].uut    |delay_165      |     6|
+|375   |        \genblk1[70].uut   |delay_166      |     8|
+|376   |        \genblk1[71].uut   |delay_167      |     8|
+|377   |        \genblk1[72].uut   |delay_168      |     6|
+|378   |        \genblk1[73].uut   |delay_169      |     7|
+|379   |        \genblk1[74].uut   |delay_170      |    11|
+|380   |        \genblk1[75].uut   |delay_171      |     6|
+|381   |        \genblk1[76].uut   |delay_172      |     7|
+|382   |        \genblk1[77].uut   |delay_173      |    11|
+|383   |        \genblk1[78].uut   |delay_174      |     8|
+|384   |        \genblk1[79].uut   |delay_175      |     7|
+|385   |        \genblk1[7].uut    |delay_176      |     9|
+|386   |        \genblk1[80].uut   |delay_177      |     9|
+|387   |        \genblk1[81].uut   |delay_178      |     6|
+|388   |        \genblk1[82].uut   |delay_179      |     7|
+|389   |        \genblk1[83].uut   |delay_180      |     7|
+|390   |        \genblk1[84].uut   |delay_181      |     8|
+|391   |        \genblk1[85].uut   |delay_182      |     6|
+|392   |        \genblk1[86].uut   |delay_183      |     9|
+|393   |        \genblk1[87].uut   |delay_184      |     7|
+|394   |        \genblk1[88].uut   |delay_185      |     6|
+|395   |        \genblk1[89].uut   |delay_186      |    10|
+|396   |        \genblk1[8].uut    |delay_187      |     7|
+|397   |        \genblk1[90].uut   |delay_188      |     6|
+|398   |        \genblk1[91].uut   |delay_189      |     6|
+|399   |        \genblk1[92].uut   |delay_190      |    12|
+|400   |        \genblk1[93].uut   |delay_191      |     7|
+|401   |        \genblk1[94].uut   |delay_192      |     6|
+|402   |        \genblk1[95].uut   |delay_193      |     8|
+|403   |        \genblk1[96].uut   |delay_194      |     8|
+|404   |        \genblk1[97].uut   |delay_195      |     7|
+|405   |        \genblk1[98].uut   |delay_196      |     8|
+|406   |        \genblk1[99].uut   |delay_197      |     9|
+|407   |        \genblk1[9].uut    |delay_198      |     8|
+|408   |  uut2                     |fifo           |    92|
+|409   |  uut3                     |transmitter    |    59|
++------+---------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1230.973 ; gain = 488.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1230.973 ; gain = 369.094
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:30 . Memory (MB): peak = 1230.973 ; gain = 488.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1239.016 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 414 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1239.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDP => LDPE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:40 . Memory (MB): peak = 1239.055 ; gain = 780.477
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1239.055 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  8 18:04:46 2020...

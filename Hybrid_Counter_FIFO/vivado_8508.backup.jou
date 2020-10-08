@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 18 14:53:10 2020
+# Process ID: 8508
+# Current directory: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19416 C:\Users\Shantanu Shinde\Desktop\Shantanu\TIFR\Fine Counter Codes\Hybrid_Counter_FIFO\Hybrid_Counter.xpr
+# Log file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/vivado.log
+# Journal file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1
+open_run synth_1 -name synth_1
+close_design
+close_design
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1

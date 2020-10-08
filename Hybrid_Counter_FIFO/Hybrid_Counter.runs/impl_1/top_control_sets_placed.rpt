@@ -1,0 +1,87 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Aug  8 18:07:55 2020
+| Host         : DESKTOP-UENKOU2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1623 |          409 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               2 |            2 |
+| Yes          | No                    | No                     |              56 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              25 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------+------------------+----------------+
+|                      Clock Signal                      |                                     Enable Signal                                     |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  uut1/uut_fc2/uut3/genblk1[92].uut/temp_reg[0]_i_10__0 |                                                                                       | uut1/uut_fc2/uut3/genblk1[199].uut/temp |                1 |              1 |
+|  uut1/uut_fc1/uut3/genblk1[92].uut/temp_reg[0]_i_10    |                                                                                       | uut1/uut_fc1/uut3/genblk1[199].uut/temp |                1 |              1 |
+|  clk_IBUF_BUFG                                         | uut2/transmit_reg_0                                                                   | uut3/i                                  |                2 |              4 |
+|  clk_IBUF_BUFG                                         | uut3/i                                                                                | uut3/byte_counter                       |                3 |              7 |
+|  clk_IBUF_BUFG                                         | uut2/transmit                                                                         | uut2/transmit_reg_0                     |                4 |             14 |
+|  clk_IBUF_BUFG                                         | flag30                                                                                |                                         |                4 |             16 |
+|  clk_IBUF_BUFG                                         | uut2/uut/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] |                                         |                7 |             20 |
+|  clk_IBUF_BUFG                                         | uut2/uut/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] |                                         |                5 |             20 |
+|  clk_IBUF_BUFG                                         |                                                                                       |                                         |              409 |           1623 |
++--------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------+------------------+----------------+
+
+

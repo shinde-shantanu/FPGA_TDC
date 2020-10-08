@@ -1,0 +1,191 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 18 14:53:10 2020
+# Process ID: 8508
+# Current directory: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19416 C:\Users\Shantanu Shinde\Desktop\Shantanu\TIFR\Fine Counter Codes\Hybrid_Counter_FIFO\Hybrid_Counter.xpr
+# Log file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/vivado.log
+# Journal file: C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 870.109 ; gain = 270.070
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1205.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 422 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1907.777 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1907.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1907.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:01 ; elapsed = 00:00:51 . Memory (MB): peak = 2087.922 ; gain = 1153.844
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-3
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'uut2/uut'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2313.012 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 422 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'uut2/uut/U0'
+Finished Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'uut2/uut/U0'
+Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc:268]
+Finished Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2489.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2489.184 ; gain = 179.289
+close_design
+close_design
+close_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2489.184 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-3
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'uut2/uut'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2489.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 422 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'uut2/uut/U0'
+Finished Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'uut2/uut/U0'
+Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc:268]
+Finished Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2489.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2489.184 ; gain = 0.000
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-3
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2489.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Fine_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (1#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (2#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'delay' (3#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/encoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'encoder' (4#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/encoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (5#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Fine_Counter' (6#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Coarse_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter RUN bound to: 2'b01 
+	Parameter FIN bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (7#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/DFF.v:23]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:80]
+WARNING: [Synth 8-6014] Unused sequential element reset_reg was removed.  [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'Coarse_Counter' (8#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hybrid_Counter' (9#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'op_fc1' does not match port width (10) of module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:47]
+WARNING: [Synth 8-689] width (1) of port connection 'op_fc2' does not match port width (10) of module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:48]
+WARNING: [Synth 8-689] width (1) of port connection 'op_cc' does not match port width (16) of module 'Hybrid_Counter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:49]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/fifo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/.Xil/Vivado-8508-DESKTOP-UENKOU2/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (10#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/.Xil/Vivado-8508-DESKTOP-UENKOU2/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (11#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/fifo.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'dout' does not match port width (64) of module 'fifo' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/transmitter.v:23]
+	Parameter uart_rate bound to: 10416 - type: integer 
+	Parameter bytes bound to: 8 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg was removed.  [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/transmitter.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (12#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/transmitter.v:23]
+WARNING: [Synth 8-3848] Net TxD in module/entity top does not have driver. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:27]
+WARNING: [Synth 8-3848] Net bitout in module/entity top does not have driver. [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design top has unconnected port TxD
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2489.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2489.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2489.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'uut2/uut'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.390 . Memory (MB): peak = 2489.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 410 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'uut2/uut/U0'
+Finished Parsing XDC File [c:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'uut2/uut/U0'
+Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Shantanu Shinde/Desktop/Shantanu/TIFR/Fine Counter Codes/Hybrid_Counter_FIFO/Hybrid_Counter.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2489.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:42 . Memory (MB): peak = 2489.184 ; gain = 0.000
+35 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:42 . Memory (MB): peak = 2489.184 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 17:36:04 2020...

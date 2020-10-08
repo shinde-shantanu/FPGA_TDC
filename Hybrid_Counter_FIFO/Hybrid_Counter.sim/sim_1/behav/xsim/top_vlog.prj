@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Hybrid_Counter.srcs/sources_1/new/Coarse_Counter.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/DFF.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/Fine_Counter.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/Hybrid_Counter.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/delay.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/delay_line.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/encoder.v" \
+"../../../../Hybrid_Counter.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
